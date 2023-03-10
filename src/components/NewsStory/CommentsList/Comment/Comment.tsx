@@ -18,13 +18,13 @@ const Comment = React.memo(({ id, isChild = false }: IProps) => {
   const hasChilds = data?.kids && data.kids?.length;
 
   return (
-    <div className={classNames(st.wrapper)}>
+    <div className={classNames(st.wrapper, { [st.childNode]: isChild })}>
       <Card className={st.card} onClick={onToggle}>
         {!!data && (
           <div className={st.content}>
             <div className={st.main}>
               <div>Author: {data.by}</div>
-              <div>{parse(data.text)}</div>
+              <div>{parse(data.text || "")}</div>
             </div>
 
             {hasChilds && <div className={st.replies}>{data.kids.length} replies</div>}
