@@ -18,7 +18,7 @@ const Comment = React.memo(({ id, isChild = false }: IProps) => {
   const hasChilds = data?.kids && data.kids?.length;
 
   return (
-    <div className={classNames(st.wrapper, { [`${st.childNode}`]: isChild })}>
+    <div className={classNames(st.wrapper)}>
       <Card className={st.card} onClick={onToggle}>
         {!!data && (
           <div className={st.content}>
