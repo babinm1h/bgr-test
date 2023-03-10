@@ -1,0 +1,12 @@
+.card {
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(#000, 0.1);
+    }
+}
+.content {
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
