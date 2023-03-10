@@ -72,6 +72,10 @@ const NewsStory = () => {
           <span className={st.infoItemTitle}>Author:</span>
           {item.by}
         </div>
+        <div className={st.infoItem}>
+          <span className={st.infoItemTitle}>Comments:</span>
+          {item.kids ? item.kids.length : 0}
+        </div>
       </div>
 
       {item.kids?.length ? <CommentsList commentIds={item.kids} /> : null}
