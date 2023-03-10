@@ -1,8 +1,8 @@
-#### Ссылка на deploy:
+## Ссылка на deploy:
 
-[Create React App](https://github.com/facebook/create-react-app).
+[https://remarkable-cassata-c9a9ee.netlify.app](https://remarkable-cassata-c9a9ee.netlify.app).
 
-#### Для запуска:
+## Для запуска:
 
 1. git clone
 2. npm install
